@@ -1,2 +1,3 @@
-openssl*
-.build
+/openssl*
+/.build
+/*.tar.gz

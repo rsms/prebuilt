@@ -42,15 +42,15 @@ pre:
 
 "$(BUILDDIR)/include/openssl":
 	rm -rf "$(BUILDDIR)/include/openssl"
-	ln -fs "$(SELFDIR)/include/openssl" "$(BUILDDIR)/include/openssl"
+	ln -fs "$(INCDIR)/openssl" "$(BUILDDIR)/include/openssl"
 
 "$(BUILDDIR)/include/event2":
 	rm -rf "$(BUILDDIR)/include/event2"
-	ln -fs "$(SELFDIR)/include/event2" "$(BUILDDIR)/include/event2"
+	ln -fs "$(INCDIR)/event2" "$(BUILDDIR)/include/event2"
 
 "$(BUILDDIR)/include/leveldb":
 	rm -rf "$(BUILDDIR)/include/leveldb"
-	ln -fs "$(SELFDIR)/include/leveldb" "$(BUILDDIR)/include/leveldb"
+	ln -fs "$(INCDIR)/leveldb" "$(BUILDDIR)/include/leveldb"
 
 clean:
 	rm -rf "$(BUILDDIR)/include/openssl" \
